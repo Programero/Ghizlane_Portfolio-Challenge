@@ -15,7 +15,108 @@
       href="https://devchallenges.io/"
     />
 
+    <!-- ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script defer src="js/app.js"></script>
+
     <title>Devchallenges</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Ghizlane</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="material-icons nav__icon"> home </i>
+                <span class="nav__name">Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about-me" class="nav__link">
+                <i class="material-icons nav__icon"> person </i>
+                <span class="nav__name">About me</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="material-icons nav__icon"> construction </i>
+                <span class="nav__name">Projects</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="material-icons nav__icon"> code </i>
+                <span class="nav__name">Skills</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#team" class="nav__link">
+                <i class="material-icons nav__icon"> article </i>
+                <span class="nav__name">Blog</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section home" id="home">
+        <div class="container">
+          <div class="home-grid">
+            <div class="home-content">
+              <h1 class="heading-1">
+                Design is the silent <br />
+                ambassador of <br />
+                your brand
+              </h1>
+
+              <a href="#about-me" class="btn">Learn more</a>
+            </div>
+
+            <div class="home-picture">
+              <img
+                src="img/hero-img.svg"
+                alt="Photo with different size of screen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-me">
+        <div class="container">
+          <div class="cards">
+            <div class="card profile">
+              <div class="card-window">
+                <div class="circle c-red"></div>
+                <div class="circle c-orange"></div>
+                <div class="circle c-green"></div>
+              </div>
+
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="services"></section>
+      <section class="section" id="work"></section>
+      <section class="section" id="team"></section>
+    </main>
+  </body>
 </html>
