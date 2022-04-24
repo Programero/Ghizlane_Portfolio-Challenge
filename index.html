@@ -51,7 +51,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#services" class="nav__link">
+              <a href="#projects" class="nav__link">
                 <i class="material-icons nav__icon"> construction </i>
                 <span class="nav__name">Projects</span>
               </a>
@@ -99,9 +99,10 @@
         </div>
       </section>
 
-      <section class="section" id="about-me">
+      <section class="section about-me" id="about-me">
         <div class="container">
-          <div class="cards">
+          <h2 class="heading-2">About Me</h2>
+          <div class="about-me-container">
             <div class="card profile">
               <div class="card-window">
                 <div class="circle c-red"></div>
@@ -109,12 +110,171 @@
                 <div class="circle c-green"></div>
               </div>
 
-              <img src="" alt="" />
+              <div class="profile-content">
+                <img class="profile-img" src="img/profile.png" alt="" />
+                <p class="profile-name">Ghizlane EL ATMANI</p>
+                <p class="profile-job">Front end developer</p>
+              </div>
+
+              <div class="profile-desc">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt reprehenderit a quibusdam .
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto odio excepturi consequuntur!
+                </p>
+              </div>
+            </div>
+
+            <div class="card hobbies">
+              <div class="card-window">
+                <div class="circle c-red"></div>
+                <div class="circle c-orange"></div>
+                <div class="circle c-green"></div>
+              </div>
+
+              <p class="hobbies-title">Hobbies</p>
+              <div class="hobbies-wrapper">
+                <div class="hobby">
+                  <p class="hobby-title">Reading</p>
+                  <img
+                    class="hobby-img"
+                    src="img/reading.jpg"
+                    alt="Photo of an open book, glasses and cup of coffee"
+                  />
+                  <p class="hobby-desc">
+                    “The more that you read, the more things you will know. The
+                    more that you learn, the more places you’ll go.”
+                    <br />
+                    Dr. Seuss
+                  </p>
+                </div>
+
+                <div class="hobby">
+                  <p class="hobby-title">Cooking</p>
+                  <img
+                    class="hobby-img"
+                    src="img/cooking.jpg"
+                    alt="Photo of a knife"
+                  />
+                  <p class="hobby-desc">
+                    “Cooking requires confident guesswork and
+                    improvisation—experimentation and substitution, dealing with
+                    failure and uncertainty in a creative way.” <br />
+                    Paul Theroux
+                  </p>
+                </div>
+
+                <div class="hobby">
+                  <p class="hobby-title">Walking</p>
+                  <img
+                    class="hobby-img"
+                    src="img/walking.jpg"
+                    alt="Photo of a person walking"
+                  />
+                  <p class="hobby-desc">
+                    "There is no habit you will value so much as that of walking
+                    far without fatigue." <br />
+                    <span>Thomas Jefferson</span>
+                  </p>
+                </div>
+
+                <div class="hobby">
+                  <p class="hobby-title">Gaming</p>
+                  <img
+                    class="hobby-img"
+                    src="img/gaming.jpg"
+                    alt="Photo of a ps4 controller"
+                  />
+                  <p class="hobby-desc">
+                    "Gaming brings people together." <br />
+                    Lisa Su.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card skills">
+              <div class="card-window">
+                <div class="circle c-red"></div>
+                <div class="circle c-orange"></div>
+                <div class="circle c-green"></div>
+              </div>
+
+              <div class="skills-wrapper">
+                <p class="skill-domain">Front end</p>
+                <ul>
+                  <li>
+                    <p class="skill-name">HTML</p>
+                    <div class="bar">
+                      <span class="bar-html"></span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p class="skill-name">CSS</p>
+                    <div class="bar">
+                      <span class="bar-css"></span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p class="skill-name">Javascript</p>
+                    <div class="bar">
+                      <span class="bar-js"></span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <p class="skill-name">React</p>
+                    <div class="bar">
+                      <span class="bar-react"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section" id="services"></section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="heading-2">Projects</h2>
+          <div class="gallery-projects">
+            <ul>
+              <li class="list" data-filter="All">All</li>
+              <li class="list" data-filter="react">React</li>
+              <li class="list" data-filter="responsive">Responsive</li>
+            </ul>
+
+            <div class="projects">
+              <div class="project">
+                <img
+                  src="img/gaming.jpg"
+                  alt="Photo showing the project"
+                  class="project-img"
+                />
+                <p class="tags">#HTML #CSS #responsive</p>
+                <p class="project-title">Recipe Blog</p>
+                <p class="project-desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Corporis sequi repellat alias modi voluptate placeat
+                  praesentium explicabo optio eligendi quis.
+                </p>
+                <div class="project-btns">
+                  <a href="#" class="btn-demo">Demo</a>
+                  <a href="#" class="btn-code">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="work"></section>
       <section class="section" id="team"></section>
     </main>
