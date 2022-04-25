@@ -30,3 +30,30 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+/*=============== PROJECTS FILTER ===============*/
+const tagList = document.querySelectorAll(".list-tag");
+const projects = document.querySelectorAll(".project");
+
+for (let i = 0; i < tagList.length; i++) {
+  tagList[i].addEventListener("click", function () {
+    for (let j = 0; j < tagList.length; j++) {
+      tagList[j].classList.remove("active-tag");
+    }
+    this.classList.add("active-tag");
+
+    let dataFilter = this.getAttribute("data-filter");
+
+    for (let k = 0; k < projects.length; k++) {
+      projects[k].classList.add("hide");
+      projects[k].classList.remove("active");
+      if (
+        projects[k].getAttribute("data-item") == dataFilter ||
+        dataFilter == "all"
+      ) {
+        projects[k].classList.add("active");
+        projects[k].classList.remove("hide");
+      }
+    }
+  });
+}

@@ -58,14 +58,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#work" class="nav__link">
-                <i class="material-icons nav__icon"> code </i>
-                <span class="nav__name">Skills</span>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#team" class="nav__link">
+              <a href="#blog" class="nav__link">
                 <i class="material-icons nav__icon"> article </i>
                 <span class="nav__name">Blog</span>
               </a>
@@ -241,30 +234,74 @@
         </div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section project-section" id="projects">
         <div class="container">
           <h2 class="heading-2">Projects</h2>
           <div class="gallery-projects">
             <ul>
-              <li class="list" data-filter="All">All</li>
-              <li class="list" data-filter="react">React</li>
-              <li class="list" data-filter="responsive">Responsive</li>
+              <li class="list-tag active-tag" data-filter="all">All</li>
+              <li class="list-tag" data-filter="react">React</li>
+              <li class="list-tag" data-filter="responsive">Responsive</li>
             </ul>
 
             <div class="projects">
-              <div class="project">
-                <img
-                  src="img/gaming.jpg"
-                  alt="Photo showing the project"
-                  class="project-img"
-                />
-                <p class="tags">#HTML #CSS #responsive</p>
-                <p class="project-title">Recipe Blog</p>
-                <p class="project-desc">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Corporis sequi repellat alias modi voluptate placeat
-                  praesentium explicabo optio eligendi quis.
-                </p>
+              <div class="project" data-item="react">
+                <div class="project-content">
+                  <img
+                    src="img/p-button-challenge.png"
+                    alt="Photo showing the project"
+                    class="project-img"
+                  />
+                  <p class="tags">#React</p>
+                  <p class="project-title">Button component</p>
+                  <p class="project-desc">
+                    One of the best ways to learn front-end libraries is to
+                    create a reusable component. My task was to to create a
+                    reusable button.
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a href="#" class="btn-demo">Demo</a>
+                  <a href="#" class="btn-code">Code</a>
+                </div>
+              </div>
+
+              <div class="project" data-item="responsive">
+                <div class="project-content">
+                  <img
+                    src="img/p-edie-homepage.png"
+                    alt="Photo showing the project"
+                    class="project-img"
+                  />
+                  <p class="tags">#HTML #CSS #responsive</p>
+                  <p class="project-title">Edie Homepage</p>
+                  <p class="project-desc">
+                    Homepage is a popular task that a developer has to do. In
+                    this challenge, I had to work with a given design and
+                    fullfil the user stories.
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a href="#" class="btn-demo">Demo</a>
+                  <a href="#" class="btn-code">Code</a>
+                </div>
+              </div>
+
+              <div class="project" data-item="responsive">
+                <div class="project-content">
+                  <img
+                    src="img/p-recipe-blog.png"
+                    alt="Photo showing the project"
+                    class="project-img"
+                  />
+                  <p class="tags">#HTML #CSS #responsive</p>
+                  <p class="project-title">Recipe Blog</p>
+                  <p class="project-desc">
+                    Everyone loves food, especially cheesecake. In this project,
+                    I had to work with a given recipe and fullfil the user
+                    stories.
+                  </p>
+                </div>
                 <div class="project-btns">
                   <a href="#" class="btn-demo">Demo</a>
                   <a href="#" class="btn-code">Code</a>
@@ -275,8 +312,7 @@
         </div>
       </section>
 
-      <section class="section" id="work"></section>
-      <section class="section" id="team"></section>
+      <section class="section" id="blog"></section>
     </main>
   </body>
 </html>
