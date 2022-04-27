@@ -7,13 +7,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
 
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+    <link rel="icon" href="img/logo-sm.png" />
 
     <!-- ICONS -->
     <link
@@ -27,9 +21,24 @@
     <!-- JS -->
     <script defer src="js/app.js"></script>
 
-    <title>Devchallenges</title>
+    <title>Portfolio | Ghizlane EL ATMANI</title>
   </head>
   <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Header -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo"><img src="img/logo.png" alt="" /></a>
@@ -54,13 +63,6 @@
               <a href="#projects" class="nav__link">
                 <i class="material-icons nav__icon"> construction </i>
                 <span class="nav__name">Projects</span>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#blog" class="nav__link">
-                <i class="material-icons nav__icon"> article </i>
-                <span class="nav__name">Blog</span>
               </a>
             </li>
           </ul>
@@ -142,7 +144,7 @@
                     “The more that you read, the more things you will know. The
                     more that you learn, the more places you’ll go.”
                     <br />
-                    Dr. Seuss
+                    <span>&mdash; Dr. Seuss</span>
                   </p>
                 </div>
 
@@ -157,7 +159,7 @@
                     “Cooking requires confident guesswork and
                     improvisation—experimentation and substitution, dealing with
                     failure and uncertainty in a creative way.” <br />
-                    Paul Theroux
+                    <span>&mdash; Paul Theroux</span>
                   </p>
                 </div>
 
@@ -171,7 +173,7 @@
                   <p class="hobby-desc">
                     "There is no habit you will value so much as that of walking
                     far without fatigue." <br />
-                    <span>Thomas Jefferson</span>
+                    <span>&mdash; Thomas Jefferson</span>
                   </p>
                 </div>
 
@@ -184,7 +186,7 @@
                   />
                   <p class="hobby-desc">
                     "Gaming brings people together." <br />
-                    Lisa Su.
+                    <span>&mdash; Lisa Su.</span>
                   </p>
                 </div>
               </div>
@@ -245,6 +247,7 @@
             </ul>
 
             <div class="projects">
+              <!-- BUTTON CHALLENGE -->
               <div class="project" data-item="react">
                 <div class="project-content">
                   <img
@@ -266,6 +269,7 @@
                 </div>
               </div>
 
+              <!-- EDIE HOMEPAGE -->
               <div class="project" data-item="responsive">
                 <div class="project-content">
                   <img
@@ -282,11 +286,77 @@
                   </p>
                 </div>
                 <div class="project-btns">
-                  <a href="#" class="btn-demo">Demo</a>
-                  <a href="#" class="btn-code">Code</a>
+                  <a
+                    href="https://edie-homepage-ge.netlify.app/"
+                    class="btn-demo"
+                    >Demo
+                  </a>
+                  <a
+                    href="https://github.com/ghizlane-elatmani/Edie-homepage"
+                    class="btn-code"
+                    >Code
+                  </a>
                 </div>
               </div>
 
+              <!-- CHECKOUT PAGE -->
+              <div class="project" data-item="responsive">
+                <div class="project-content">
+                  <img
+                    src="img/p-checkout-page.png"
+                    alt="Photo showing the project"
+                    class="project-img"
+                  />
+                  <p class="tags">#HTML #CSS #responsive</p>
+                  <p class="project-title">Checkout Page</p>
+                  <p class="project-desc">
+                    Checkout page use a minimal design and contains a form with
+                    differents inputs. In this challenge, I had to work with a
+                    given design and fullfil the user stories.
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a
+                    href="https://checkout-page-ge.netlify.app/"
+                    class="btn-demo"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/ghizlane-elatmani/Checkout-Page"
+                    class="btn-code"
+                    >Code</a
+                  >
+                </div>
+              </div>
+
+              <!-- MY GALLERY -->
+              <div class="project" data-item="responsive">
+                <div class="project-content">
+                  <img
+                    src="img/p-my-gallery.png"
+                    alt="Photo showing the project"
+                    class="project-img"
+                  />
+                  <p class="tags">#HTML #CSS #responsive</p>
+                  <p class="project-title">My Gallery</p>
+                  <p class="project-desc">
+                    Inspired by Instagram. In this challenge, I had to work with
+                    a similar design to instagram profile page.
+                  </p>
+                </div>
+                <div class="project-btns">
+                  <a href="https://my-gallery-ge.netlify.app/" class="btn-demo"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/ghizlane-elatmani/My-Gallery"
+                    class="btn-code"
+                    >Code</a
+                  >
+                </div>
+              </div>
+
+              <!-- RECIPE BLOG -->
               <div class="project" data-item="responsive">
                 <div class="project-content">
                   <img
@@ -303,16 +373,69 @@
                   </p>
                 </div>
                 <div class="project-btns">
-                  <a href="#" class="btn-demo">Demo</a>
-                  <a href="#" class="btn-code">Code</a>
+                  <a href="https://recipe-blog-ge.netlify.app/" class="btn-demo"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/ghizlane-elatmani/Recipe-Page"
+                    class="btn-code"
+                    >Code</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="section" id="blog"></section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#home"> Home </a>
+            </li>
+
+            <li class="footer-nav__item">
+              <a href="#about-me"> About me </a>
+            </li>
+
+            <li class="footer-nav__item">
+              <a href="#projects"> Projects </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <p class="social__title">Social network:</p>
+          <ul class="social__list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ghizlane-el-atmani-a91732214/"
+              >
+                <img src="img/linkedin.png" alt="linkedin Logo" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/ghizlane-elatmani">
+                <img src="img/github.png" alt="github Logo" />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://devchallenges.io/portfolio/ghizlane-elatmani">
+                <img src="img/devchallenges.png" alt="devChallenge Logo" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="created-footer">
+          created by <span>ghizlane-elatmani</span> - devChallenge.io
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

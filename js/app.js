@@ -57,3 +57,13 @@ for (let i = 0; i < tagList.length; i++) {
     }
   });
 }
+
+/*=============== LOADER ===============*/
+const loader = document.querySelector(".loader");
+
+window.addEventListener("load", () => {
+  let delayInMilliseconds = 1000;
+  setTimeout(function () {
+    loader.classList.add("fondu-out");
+  }, delayInMilliseconds);
+});
